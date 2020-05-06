@@ -1,0 +1,9 @@
+- name: Tomcat deployment playbook
+  hosts: web      
+  become: yes            
+  become_method: sudo    
+  remote_user: root
+  roles:
+    - create-directory      
+    - create-file  
+    - copy-file

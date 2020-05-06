@@ -1,0 +1,10 @@
+---
+- name: create directory
+  file:
+    path: /usr/share/myapp
+    state: directory
+    owner: root
+    group: root
+    mode: '0755'
+
+# tasks file for create-directory

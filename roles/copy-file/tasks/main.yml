@@ -1,0 +1,23 @@
+---
+- name: copy file
+  copy:
+    src: test.txt
+    dest: /usr/share/myapp
+
+- name: copy file using loction
+  copy:
+    src: /data/ansible/playbook-1/file.txt
+    dest: /usr/share/myapp
+
+- name: copy file-two
+  copy: 
+    src: file-two.txt
+    dest: /usr/share/myapp
+
+- name: copy file-three
+  copy:
+    src: file-three.txt
+    dest: /usr/share/myapp
+
+    
+# tasks file for copy-file

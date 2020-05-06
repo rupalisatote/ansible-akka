@@ -1,0 +1,7 @@
+---
+- name:
+  file:
+    path: /usr/share/myapp/foo.conf
+    state: touch
+    mode: u+rw,g-wx,o-rwx
+# tasks file for create-file
